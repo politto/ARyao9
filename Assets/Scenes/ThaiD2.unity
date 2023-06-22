@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 23511368}
   - component: {fileID: 23511371}
   - component: {fileID: 23511370}
-  - component: {fileID: 23511369}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -157,27 +156,6 @@ Transform:
   m_Father: {fileID: 1722707483}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &23511369
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23511367}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &23511370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -663,7 +641,6 @@ GameObject:
   - component: {fileID: 107481039}
   - component: {fileID: 107481042}
   - component: {fileID: 107481041}
-  - component: {fileID: 107481040}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -686,27 +663,6 @@ Transform:
   m_Father: {fileID: 2051664771}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &107481040
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107481038}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &107481041
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1249,7 +1205,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1412,8 +1368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childTextObj: {fileID: 789304797}
   window: {fileID: 1556816750}
-  header: "\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E1A\u0E1A\u0E25\u0E07\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19\u0E02\u0E2D\u0E23\u0E31\u0E1A
-    \u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E25\u0E48\u0E27\u0E07\u0E2B\u0E19\u0E49\u0E32"
+  header: "\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E1A\u0E1A"
   content: "\u0E2B\u0E32\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E08\u0E14\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19\u0E2A\u0E21\u0E23\u0E2A,
     \u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19\u0E2B\u0E22\u0E48\u0E32, \u0E08\u0E30\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E0A\u0E37\u0E48\u0E2D
     \u0E2B\u0E23\u0E37\u0E2D\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E23\u0E32\u0E0A\u0E01\u0E32\u0E23\u0E17\u0E32\u0E07\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E46
@@ -2393,7 +2348,8 @@ GameObject:
   - component: {fileID: 563550674}
   - component: {fileID: 563550673}
   m_Layer: 0
-  m_Name: "\u0E14\u0E39\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E23\u0E32\u0E0A\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E07\u0E15\u0E19\u0E40\u0E2D\u0E07"
+  m_Name: "\u0E23\u0E31\u0E1A\u0E1A\u0E38\u0E15\u0E23\u0E1A\u0E38\u0E0D\u0E18\u0E23\u0E23\u0E21
+    / \u0E41\u0E2D\u0E1B\u0E40\u0E07\u0E34\u0E19\u0E40\u0E14\u0E47\u0E01"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2439,8 +2395,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E14\u0E39\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E23\u0E32\u0E0A\u0E01\u0E32\u0E23
-    \u0E02\u0E2D\u0E07\u0E15\u0E19\u0E40\u0E2D\u0E07"
+  m_text: "\u0E23\u0E31\u0E1A\u0E1A\u0E38\u0E15\u0E23\u0E1A\u0E38\u0E0D\u0E18\u0E23\u0E23\u0E21
+    / \u0E41\u0E2D\u0E1B\u0E40\u0E07\u0E34\u0E19\u0E40\u0E14\u0E47\u0E01"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dbd805a49c9850d40b2fd34b0a429069, type: 2}
   m_sharedMaterial: {fileID: -8569556698958896468, guid: dbd805a49c9850d40b2fd34b0a429069,
@@ -2910,12 +2866,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childTextObj: {fileID: 563550671}
   window: {fileID: 1556816750}
-  header: "\u0E40\u0E23\u0E35\u0E22\u0E01\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E15\u0E19\u0E40\u0E2D\u0E07\u0E1A\u0E19
-    \u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E17\u0E32\u0E07\u0E23\u0E32\u0E0A\u0E01\u0E32\u0E23"
-  content: "\u0E43\u0E19\u0E41\u0E2D\u0E1B ThaiD \u0E19\u0E31\u0E49\u0E19 \u0E40\u0E23\u0E32\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E1A\u0E19\u0E1A\u0E31\u0E15\u0E23\u0E1B\u0E23\u0E30\u0E0A\u0E32\u0E0A\u0E19\u0E02\u0E2D\u0E07\u0E15\u0E19\u0E40\u0E2D\u0E07\u0E44\u0E14\u0E49
-    \u0E17\u0E31\u0E49\u0E07\u0E14\u0E49\u0E32\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E25\u0E30\u0E14\u0E49\u0E32\u0E19\u0E2B\u0E25\u0E31\u0E07
-    \u0E41\u0E25\u0E30\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19\u0E1A\u0E49\u0E32\u0E19\u0E02\u0E2D\u0E07\u0E15\u0E19\u0E40\u0E2D\u0E07\u0E44\u0E14\u0E49\u0E2D\u0E35\u0E01\u0E14\u0E49\u0E27\u0E22
-    \u0E1C\u0E48\u0E32\u0E19\u0E17\u0E32\u0E07\u0E40\u0E21\u0E19\u0E39\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23"
+  header: "\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E1A\u0E1A\u0E02\u0E2D\u0E23\u0E31\u0E1A\u0E1A\u0E38\u0E15\u0E23\u0E1A\u0E38\u0E0D\u0E18\u0E23\u0E23\u0E21\u0E2D\u0E2D\u0E19\u0E44\u0E25\u0E19\u0E4C
+    / \u0E41\u0E2D\u0E1B\u0E40\u0E07\u0E34\u0E19\u0E40\u0E14\u0E47\u0E01"
+  content: "\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49 ThaID \u0E22\u0E37\u0E19\u0E22\u0E31\u0E19\u0E15\u0E31\u0E27\u0E15\u0E19\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E1A\u0E1A\u0E22\u0E37\u0E48\u0E19\u0E04\u0E33\u0E02\u0E2D\u0E23\u0E31\u0E1A\u0E40\u0E14\u0E47\u0E01\u0E40\u0E1B\u0E47\u0E19\u0E1A\u0E38\u0E15\u0E23\u0E1A\u0E38\u0E0D\u0E18\u0E23\u0E23\u0E21
+    \u0E02\u0E2D\u0E07\u0E01\u0E23\u0E21\u0E01\u0E34\u0E08\u0E01\u0E32\u0E23\u0E40\u0E14\u0E47\u0E01\u0E41\u0E25\u0E30\u0E40\u0E22\u0E32\u0E27\u0E0A\u0E19\u0E44\u0E14\u0E49
+    \u0E41\u0E25\u0E30\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E41\u0E2D\u0E1B\u0E1E\u0E25\u0E34\u0E40\u0E04\u0E0A\u0E31\u0E48\u0E19\u0E40\u0E07\u0E34\u0E19\u0E40\u0E14\u0E47\u0E01\u0E44\u0E14\u0E49
+    \u0E2D\u0E31\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E41\u0E2D\u0E1B\u0E1E\u0E25\u0E34\u0E40\u0E04\u0E0A\u0E31\u0E48\u0E19\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E14\u0E49\u0E32\u0E19\u0E01\u0E32\u0E23\u0E40\u0E07\u0E34\u0E19\u0E41\u0E01\u0E48\u0E1C\u0E39\u0E49\u0E1B\u0E01\u0E04\u0E23\u0E2D\u0E07\u0E02\u0E2D\u0E07\u0E40\u0E14\u0E47\u0E01\u0E41\u0E23\u0E01\u0E40\u0E01\u0E34\u0E14"
 --- !u!1 &641160585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,7 +3500,7 @@ GameObject:
   - component: {fileID: 789304800}
   - component: {fileID: 789304799}
   m_Layer: 0
-  m_Name: "\u0E25\u0E07\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19 \u0E02\u0E2D\u0E23\u0E31\u0E1A\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E25\u0E48\u0E27\u0E07\u0E2B\u0E19\u0E49\u0E32"
+  m_Name: "\u0E40\u0E2A\u0E19\u0E2D\u0E01\u0E0E\u0E2B\u0E21\u0E32\u0E22 / \u0E41\u0E1F\u0E49\u0E21\u0E1C\u0E25\u0E07\u0E32\u0E19\u0E2D\u0E2D\u0E19\u0E44\u0E25\u0E19\u0E4C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3590,7 +3546,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E25\u0E07\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19\n\u0E02\u0E2D\u0E23\u0E31\u0E1A\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E25\u0E48\u0E27\u0E07\u0E2B\u0E19\u0E49\u0E32"
+  m_text: "\u0E40\u0E2A\u0E19\u0E2D\u0E01\u0E0E\u0E2B\u0E21\u0E32\u0E22 / \u0E41\u0E1F\u0E49\u0E21\u0E1C\u0E25\u0E07\u0E32\u0E19\u0E2D\u0E2D\u0E19\u0E44\u0E25\u0E19\u0E4C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dbd805a49c9850d40b2fd34b0a429069, type: 2}
   m_sharedMaterial: {fileID: -8569556698958896468, guid: dbd805a49c9850d40b2fd34b0a429069,
@@ -3716,7 +3672,6 @@ GameObject:
   - component: {fileID: 850359552}
   - component: {fileID: 850359555}
   - component: {fileID: 850359554}
-  - component: {fileID: 850359553}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -3739,27 +3694,6 @@ Transform:
   m_Father: {fileID: 1415251782}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &850359553
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850359551}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &850359554
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4047,7 +3981,6 @@ GameObject:
   - component: {fileID: 949552245}
   - component: {fileID: 949552248}
   - component: {fileID: 949552247}
-  - component: {fileID: 949552246}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -4070,27 +4003,6 @@ Transform:
   m_Father: {fileID: 1645660168}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &949552246
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949552244}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &949552247
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4111,7 +4023,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9b767cc00752bed40af4a72b3a2e4992, type: 2}
+  - {fileID: 2100000, guid: 79754ac42c9a36949ba0086ea819a1bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4622,7 +4534,6 @@ GameObject:
   - component: {fileID: 1032883050}
   - component: {fileID: 1032883053}
   - component: {fileID: 1032883052}
-  - component: {fileID: 1032883051}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -4645,27 +4556,6 @@ Transform:
   m_Father: {fileID: 598778014}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &1032883051
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032883049}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1032883052
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5088,7 +4978,7 @@ GameObject:
   - component: {fileID: 1151477427}
   - component: {fileID: 1151477426}
   m_Layer: 0
-  m_Name: TdElection (1)
+  m_Name: TdTaxHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5152,14 +5042,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childTextObj: {fileID: 1687164316}
   window: {fileID: 1556816750}
-  header: "\u0E01\u0E32\u0E23\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07\u0E17\u0E49\u0E2D\u0E07\u0E16\u0E34\u0E48\u0E19
-    \u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07
-    \u0E2A.\u0E2A."
-  content: "\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49 ThaID\u0E22\u0E37\u0E19\u0E22\u0E31\u0E19\u0E15\u0E31\u0E27\u0E15\u0E19\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E40\u0E27\u0E47\u0E1A\u0E44\u0E0B\u0E15\u0E4C
-    thportal.bora.dopa.go.th \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07
-    \u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07
-    \u0E25\u0E33\u0E14\u0E31\u0E1A\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E23\u0E32\u0E22\u0E0A\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E07\u0E15\u0E19\u0E40\u0E2D\u0E07
-    \u0E23\u0E27\u0E21\u0E17\u0E31\u0E49\u0E07\u0E01\u0E32\u0E23\u0E41\u0E08\u0E49\u0E07\u0E40\u0E2B\u0E15\u0E38\u0E44\u0E21\u0E48\u0E44\u0E1B\u0E43\u0E0A\u0E49\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07\u0E44\u0E14\u0E49\u0E2D\u0E35\u0E01\u0E14\u0E49\u0E27\u0E22"
+  header: "\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E1A\u0E1A\u0E22\u0E37\u0E48\u0E19\u0E20\u0E32\u0E29\u0E35\u0E2D\u0E2D\u0E19\u0E44\u0E25\u0E19\u0E4C
+    \u0E41\u0E25\u0E30\u0E23\u0E30\u0E1A\u0E1A Health Link"
+  content: "\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49 ThaID \u0E22\u0E37\u0E19\u0E22\u0E31\u0E19\u0E15\u0E31\u0E27\u0E15\u0E19\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E1A\u0E1A\u0E22\u0E37\u0E48\u0E19\u0E20\u0E32\u0E29\u0E35
+    \u0E40\u0E2A\u0E35\u0E22\u0E20\u0E32\u0E29\u0E35\u0E2D\u0E2D\u0E19\u0E44\u0E25\u0E19\u0E4C\u0E02\u0E2D\u0E07\u0E01\u0E23\u0E21\u0E2A\u0E23\u0E23\u0E1E\u0E32\u0E01\u0E23\u0E44\u0E14\u0E49 
+    \u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E1A\u0E1A
+    Health Link \u0E02\u0E2D\u0E07 \u0E2A\u0E27\u0E02. \u0E17\u0E35\u0E48\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E2D\u0E33\u0E19\u0E27\u0E22\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E30\u0E14\u0E27\u0E01\u0E43\u0E19\u0E01\u0E32\u0E23\u0E23\u0E31\u0E1A\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E17\u0E32\u0E07\u0E01\u0E32\u0E23\u0E41\u0E1E\u0E17\u0E22\u0E4C\u0E44\u0E14\u0E49
+    \u0E17\u0E31\u0E49\u0E07\u0E43\u0E19\u0E14\u0E49\u0E32\u0E19\u0E04\u0E48\u0E32\u0E43\u0E0A\u0E49\u0E08\u0E48\u0E32\u0E22\u0E41\u0E25\u0E30\u0E40\u0E27\u0E25\u0E32
+    \u0E41\u0E25\u0E30\u0E17\u0E31\u0E49\u0E07\u0E22\u0E32\u0E21\u0E1B\u0E01\u0E15\u0E34\u0E41\u0E25\u0E30\u0E22\u0E32\u0E21\u0E09\u0E38\u0E01\u0E40\u0E09\u0E34\u0E19"
 --- !u!65 &1151477428
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5192,7 +5082,6 @@ GameObject:
   - component: {fileID: 1236039019}
   - component: {fileID: 1236039022}
   - component: {fileID: 1236039021}
-  - component: {fileID: 1236039020}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -5215,27 +5104,6 @@ Transform:
   m_Father: {fileID: 1132613070}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &1236039020
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236039018}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1236039021
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5402,7 +5270,6 @@ GameObject:
   - component: {fileID: 1245102930}
   - component: {fileID: 1245102933}
   - component: {fileID: 1245102932}
-  - component: {fileID: 1245102931}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -5425,27 +5292,6 @@ Transform:
   m_Father: {fileID: 1645660168}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1245102931
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1245102929}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1245102932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5605,7 +5451,6 @@ GameObject:
   - component: {fileID: 1263021448}
   - component: {fileID: 1263021451}
   - component: {fileID: 1263021450}
-  - component: {fileID: 1263021449}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -5628,27 +5473,6 @@ Transform:
   m_Father: {fileID: 232260952}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &1263021449
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263021447}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1263021450
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6362,7 +6186,6 @@ GameObject:
   - component: {fileID: 1490927226}
   - component: {fileID: 1490927229}
   - component: {fileID: 1490927228}
-  - component: {fileID: 1490927227}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -6385,27 +6208,6 @@ Transform:
   m_Father: {fileID: 295444754}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &1490927227
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490927225}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1490927228
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6543,7 +6345,6 @@ GameObject:
   - component: {fileID: 1537800067}
   - component: {fileID: 1537800070}
   - component: {fileID: 1537800069}
-  - component: {fileID: 1537800068}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -6566,27 +6367,6 @@ Transform:
   m_Father: {fileID: 1018074095}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &1537800068
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537800066}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1537800069
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7087,8 +6867,8 @@ GameObject:
   - component: {fileID: 1687164319}
   - component: {fileID: 1687164318}
   m_Layer: 0
-  m_Name: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07\u0E17\u0E49\u0E2D\u0E07\u0E16\u0E34\u0E48\u0E19
-    / \u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07 \u0E2A\u0E2A."
+  m_Name: "\u0E22\u0E37\u0E48\u0E19\u0E20\u0E32\u0E29\u0E35\u0E2D\u0E2D\u0E19\u0E44\u0E25\u0E19\u0E4C
+    / \u0E23\u0E30\u0E1A\u0E1A Health Link"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7134,8 +6914,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07\u0E17\u0E49\u0E2D\u0E07\u0E16\u0E34\u0E48\u0E19
-    / \u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E31\u0E49\u0E07 \u0E2A\u0E2A."
+  m_text: "\u0E22\u0E37\u0E48\u0E19\u0E20\u0E32\u0E29\u0E35\u0E2D\u0E2D\u0E19\u0E44\u0E25\u0E19\u0E4C
+    / \u0E23\u0E30\u0E1A\u0E1A Health Link"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dbd805a49c9850d40b2fd34b0a429069, type: 2}
   m_sharedMaterial: {fileID: -8569556698958896468, guid: dbd805a49c9850d40b2fd34b0a429069,
@@ -7145,8 +6925,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7749,7 +7529,6 @@ GameObject:
   - component: {fileID: 2074915413}
   - component: {fileID: 2074915416}
   - component: {fileID: 2074915415}
-  - component: {fileID: 2074915414}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -7772,27 +7551,6 @@ Transform:
   m_Father: {fileID: 1368579746}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &2074915414
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074915412}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2074915415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8027,7 +7785,6 @@ GameObject:
   - component: {fileID: 2110792097}
   - component: {fileID: 2110792100}
   - component: {fileID: 2110792099}
-  - component: {fileID: 2110792098}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -8050,27 +7807,6 @@ Transform:
   m_Father: {fileID: 1151477425}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &2110792098
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110792096}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2110792099
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8091,7 +7827,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 44a6b9792e13d634fbd4b8724cf7e0c6, type: 2}
+  - {fileID: 2100000, guid: 4b03e8315067fa84caa322d6d57cc1ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
