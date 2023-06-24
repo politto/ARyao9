@@ -532,6 +532,7 @@ GameObject:
   - component: {fileID: 85277411}
   - component: {fileID: 85277414}
   - component: {fileID: 85277413}
+  - component: {fileID: 85277415}
   m_Layer: 0
   m_Name: thaiDLogoCir
   m_TagString: Untagged
@@ -667,6 +668,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &85277415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85277409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea9f5b200bf1542a746325cb2ca0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFXSrc: {fileID: 1641877276}
+  SFXClip: {fileID: 8300000, guid: 07ff30c60258a8c48918df8d183acbda, type: 3}
 --- !u!1 &107481038
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +862,7 @@ GameObject:
   - component: {fileID: 142588035}
   - component: {fileID: 142588034}
   - component: {fileID: 142588037}
+  - component: {fileID: 142588038}
   m_Layer: 0
   m_Name: turnBack
   m_TagString: Untagged
@@ -956,6 +972,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   window: {fileID: 1556816750}
   munmun: {fileID: 85277409}
+--- !u!114 &142588038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142588032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea9f5b200bf1542a746325cb2ca0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFXSrc: {fileID: 1641877276}
+  SFXClip: {fileID: 8300000, guid: 07ff30c60258a8c48918df8d183acbda, type: 3}
 --- !u!1 &149477167
 GameObject:
   m_ObjectHideFlags: 0
@@ -6571,6 +6601,7 @@ GameObject:
   - component: {fileID: 1248770545}
   - component: {fileID: 1248770544}
   - component: {fileID: 1248770543}
+  - component: {fileID: 1248770546}
   m_Layer: 0
   m_Name: thaIDMunFront
   m_TagString: Untagged
@@ -6658,6 +6689,20 @@ Transform:
   m_Father: {fileID: 1528981760}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1248770546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248770542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea9f5b200bf1542a746325cb2ca0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFXSrc: {fileID: 1641877276}
+  SFXClip: {fileID: 8300000, guid: 07ff30c60258a8c48918df8d183acbda, type: 3}
 --- !u!1 &1263021447
 GameObject:
   m_ObjectHideFlags: 0
